@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ayush Gupta - Professional Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="container">
+      <h1 class="logo">Ayush Gupta</h1>
+      <nav>
+        <div id="menu-toggle">☰</div>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#goals">Goals</a></li>
+          <li><a href="#academics">Academics</a></li>
+          <li><a href="#activities">Activities</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero container">
+    <div class="intro">
+      <h1>Hello, I'm <span>Ayush Gupta</span></h1>
+      <p>Corporate law aspirant | IIM Bangalore | Problem Solver | Strategist</p>
+      <a href="#contact" class="cta-button">Connect with Me</a>
+    </div>
+    <img src="zkggan6h.png" alt="Ayush Gupta Profile Picture">
+  </section>
+
+  <section id="about" class="container">
+    <h2 class="section-title">About Me</h2>
+    <p>A highly motivated individual with strong managerial skills and a passion for problem-solving. With proven leadership and a drive for efficiency, I aim to use my skills to support others and provide optimal solutions through diligence and dedication.</p>
+  </section>
+
+  <section id="goals" class="container">
+    <h2 class="section-title">Career Goals</h2>
+    <p>Aspiring to become a distinguished corporate lawyer specializing in corporate law. Dedicated to mastering complex legal frameworks and contributing to top-tier law firms through strategic counsel and unwavering commitment.</p>
+  </section>
+
+  <section id="academics" class="container">
+    <h2 class="section-title">Academic Achievements</h2>
+    <div class="cards">
+      <div class="card">10th Board Exam: <strong>90.4%</strong></div>
+      <div class="card">12th Board Exam: <strong>84%</strong></div>
+      <div class="card">CLAT AIR: <strong>1252</strong></div>
+      <div class="card">BBA, IIM Bangalore</div>
+      <div class="card">Leadership Course, IIM Ahmedabad</div>
+      <div class="card">Legislation Drafting, NLIU Bhopal</div>
+      <div class="card">Cleared CSEET (CS Foundation)</div>
+      <div class="card">Olympiads & Mental Math Awards</div>
+      <div class="card">Insolvency and Bankruptcy Code Advanced Certificate course by DNLU Jabalpur</div>
+    </div>
+  </section>
+
+  <section id="activities" class="container">
+    <h2 class="section-title">Activities & Interests</h2>
+    <ul>
+      <li>U-13 GDCA Cricket at Roop Singh Stadium</li>
+      <li>Cricket & Badminton at Lakshmi Bai Institute</li>
+      <li>Discovery School League participant</li>
+      <li>Rashtra Bhasha Vikas Parishad Contributor</li>
+      <li>Volunteering: Environmental conservation advisor, coastal protection initiatives</li>
+    </ul>
+  </section>
+
+  <footer id="contact">
+    <div class="container">
+      <h2 class="section-title">Get in Touch</h2>
+      <p>Email: <a href="mailto:ayush.gupta24@iimb.ac.in">ayush.gupta24@iimb.ac.in</a></p>
+      <p>&copy; 2025 Ayush Gupta</p>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById('menu-toggle');
+    const navLinks = document.getElementById('nav-links');
+
+    toggle.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+    });
+
+    function checkWidth() {
+      toggle.style.display = window.innerWidth < 768 ? 'block' : 'none';
+      if (window.innerWidth >= 768) {
+        navLinks.classList.remove('show');
+      }
+    }
+
+    checkWidth();
+    window.addEventListener('resize', checkWidth);
+  </script>
+</body>
+</html>
